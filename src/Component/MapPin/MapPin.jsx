@@ -37,7 +37,8 @@ class MapPin extends Component{
     
     state={
          pinPosition:[{id: 1, place: "masr", x: "150px", y: "200px"},
-                     {id: 2,  place: "maka", x: "100px", y: "300px"}
+                     {id: 2,  place: "maka", x: "100px", y: "300px"},
+                     {id: 3,  place: "maka", x: "490px", y: "500px"}
                     ]
     }
 
@@ -49,12 +50,13 @@ class MapPin extends Component{
                     this.state.pinPosition.map((value, index)=>{
                         return (
                             <div id={index} className={styles.pinPostion} 
-                            style={{
-                                position: "absolute",
-                                top: value.x,
-                                left: value.y
-                            }}  
-                            key={index}>
+                                style={{
+                                    position: "absolute",
+                                    top: value.x,
+                                    left: value.y
+                                }}  
+                                key={index}
+                            >
                                 {['top'].map((placement) => (
                                         <OverlayTrigger
                                             key={value.id}
@@ -63,10 +65,12 @@ class MapPin extends Component{
                                                    <strong>عمور بن عبد العزيز</strong>
                                                 </Tooltip>
                                             }>
-                                        <Button style={{backgroundColor: "transparent", border: "none"}}><img src={pinImg} alt=""  style={{width: "20px"}}/></Button>
+                                            <Button style={{backgroundColor: "transparent", border: "none"}}>
+                                                <img src={pinImg} alt=""  style={{width: "20px"}}/>
+                                            </Button>
                                         </OverlayTrigger>
-                                    ))}
-                                </div>
+                                ))}
+                            </div>
                         )
                     })
                 }
