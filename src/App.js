@@ -1,14 +1,15 @@
 
 import { Fragment } from 'react';
 import './App.css';
+import Home from './Component/beginSection/Home';
 import MapPin from './Component/MapPin/MapPin.jsx';
 
 function App() {
   return (
 <Fragment>
-  <div id="pins">
+  <Home/>
   <MapPin/>
-  </div>
+
 
 </Fragment>
 

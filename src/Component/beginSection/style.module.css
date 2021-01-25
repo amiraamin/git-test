@@ -1,0 +1,35 @@
+.item{
+    width: 98%;
+    height: 80px;
+    margin: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    position: relative;
+    right: -200%;
+    transition: all 5s;
+}
+
+
+.item1{
+    animation: move 5s;
+    animation-fill-mode: forwards;
+}
+
+.item2{
+    animation: move 5s 2s;
+    animation-fill-mode: forwards;
+}
+
+.item3{
+    animation: move 5s 4s;
+    animation-fill-mode: forwards;
+}
+
+.item4{
+    animation: move 5s 6s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes move{
+    from {right: -150%}
+    to {right: 0;}
+}

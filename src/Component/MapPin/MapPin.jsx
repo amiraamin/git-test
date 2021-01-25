@@ -56,6 +56,7 @@ class MapPin extends Component{
                                     left: value.y
                                 }}  
                                 key={index}
+                                
                             >
                                 {['top'].map((placement) => (
                                         <OverlayTrigger
