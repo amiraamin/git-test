@@ -1,0 +1,16 @@
+/* The side navigation menu */
+.sidenav {
+    width: 200px;
+    height: 100%;
+     
+    position: fixed; 
+    z-index: 6; 
+    top: 96;
+    padding-top: 20px; 
+    transition: 0.5s; 
+    direction: ltr;
+}
+
+.item{
+    list-style-type: none;
+}

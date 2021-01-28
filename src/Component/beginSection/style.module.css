@@ -4,7 +4,7 @@
     margin: 10px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     position: relative;
-    right: -200%;
+    left: -200%;
     transition: all 5s;
 }
 
@@ -30,6 +30,6 @@
 }
 
 @keyframes move{
-    from {right: -150%}
-    to {right: 0;}
+    from {left: -150%}
+    to {left: 0;}
 }
