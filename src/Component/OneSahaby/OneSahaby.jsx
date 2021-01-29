@@ -52,7 +52,7 @@ class OneSahaby extends Component{
         
         let data
         this.state.Alsahaba.map((value, index)=>{
-            if (value.id == this.props.match.params.id) {
+            if (value.id === this.props.match.params.id) {
                  data = value
             }
         })
@@ -64,7 +64,7 @@ class OneSahaby extends Component{
                 <SideBar data ={this.state.Alsahaba} />
 
                 <div className="nameSahaby">
-                    <h2>{data.name + "   " + data.id} </h2>
+                    <h2 className="text-center mt-2 mb-4">{data.name + "   " + data.id} </h2>
                 </div>
                 <div className="container-fluid">
                     <div className="row justify-content-end">
